@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
@@ -13,18 +13,24 @@
     <link rel="import" href="../paper-time-picker.html">
 
     <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-      </style>
+        <style is="custom-style" include="demo-pages-shared-styles">
+
+            paper-time-picker {
+                --divider-color: red;
+                --default-primary-color: yellow;
+                --text-primary-color: green;
+            }
+        </style>
     </custom-style>
-  </head>
-  <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic paper-time-picker demo</h3>
-      <demo-snippet>
+</head>
+<body>
+<div class="vertical-section-container centered">
+    <h3>Basic paper-time-picker demo</h3>
+    <demo-snippet>
         <template>
-          <paper-time-picker></paper-time-picker>
+            <paper-time-picker></paper-time-picker>
         </template>
-      </demo-snippet>
-    </div>
-  </body>
+    </demo-snippet>
+</div>
+</body>
 </html>
