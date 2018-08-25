@@ -1,7 +1,7 @@
-<link rel="import" href="../polymer/polymer-element.html">
+import '../@polymer/polymer/polymer-element.js';
+const $_documentContainer = document.createElement('template');
 
-
-<dom-module id="paper-time-picker-dialog-style">
+$_documentContainer.innerHTML = `<dom-module id="paper-time-picker-dialog-style">
   <template>
     <style>
       /* Application of mixins to local .paper-time-picker-dialog elements */
@@ -21,4 +21,6 @@
       }
     </style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
